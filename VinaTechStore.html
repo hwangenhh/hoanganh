@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>VinaTech Store</title>
+</head>
+<body>
+    <div class="form-group" id="form-group"> 
+        <div class="div1">
+            <img src="./ảnh/c43ed885734d3c096da487320dc15694.jpg" alt="anh " class="img" >
+        </div>
+        <div class="div2">
+            <div class="div-2">
+                <div class="div2-1">
+                    <p><b>THÔNG BÁO<br></b><span class="text-color">Đăng ký vào danh sách gửi thư để nhận thông tin cập nhật về hàng mới đến, ưu đãi đặc biệt và thông tin giảm giá khác.</span></p>
+                </div>
+                <div class="div2-2">
+                    <input class="div2-2-1" id="email-login" type="text" placeholder="Vui lòng nhập email của bạn.">
+                    <input class="div2-2-2" type="button" value="Đăng ký" onclick="hideFloatingInterface2()">
+                </div>
+                
+                <div class="div2-3">
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="dk" name="fav_language" value="Don't show this popup again.">
+                        <label for="dk">Don't show this popup again.</label><br>
+                </div>
+
+                <div class="div2-4">
+                    <span class="button-icon">
+                        <i class='fa fa-facebook icon'></i>
+                    </span>
+                    <span class="button-icon" >
+                        <i class="fa fa-instagram icon" aria-hidden="true"></i>
+                    </span>
+                    <span class="button-icon">
+                        <i class="fa fa-phone icon" ></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <span class="icon-exit" onclick="hideFloatingInterface()">&#215;</span>
+    </div>
+    
+    <div class="header">
+        <div class="logo">
+            <a href="" class="logo1">
+                <img style="width: 150px" src="/baitaplon/ảnh/Logo.jpg" alt="">
+            </a>
+            <span class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" name="" id="" class="search-input" placeholder="Search...">
+            </span>
+            <span  class="logo2">
+            <a href="#">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a href="#" id="show"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </span>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="account" id="address-form">
+            <div class="address-form">
+                <div class="address-form-content">
+                    <h2>Chọn địa chỉ nhận hàng<span><i class="fa-solid fa-x"></i></span></h2>
+                    <form action="">
+                        <p>Chọn đầy đủ thông tin nhận hàng</p>
+                        <select name="" id="">
+                            <option value="#">--Chọn địa điểm</option>
+                            <option value="#">Hà Nội</option>
+                            <option value="#"> TP Hồ Chí Minh</option>
+                            <option value="#"> Đà Nẵng</option>
+
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn quận huyện</option>
+                            <option value="#">Đống Đa</option>
+                            <option value="#">Hà Đông</option>
+                            <option value="#">Nam Từ Liêm</option>
+                            <option value="#">Hoàn Kiếm</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn Phường/Xã</option>
+                            <option value="#">Văn Đức</option>
+                            <option value="#">Văn Điển</option>
+                            <option value="#">Minh Khai</option>
+                            <option value="#">Mỹ Đình</option>
+                        </select>
+                        <input type="text" placeholder="Số nhà, Tên đường">
+                        <button id="address-close">Xác nhận</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <a href="https://hoanghamobile.com/tin-tuc/khoa-ung-dung-tren-samsung/"></a>
+        <a href="https://hoanghamobile.com/tin-tuc/cach-in-excel-vua-trang-giay-a4/"></a>
+        <a href="https://hoanghamobile.com/tin-tuc/soundtrack/"></a>
+    </div>
+    <div class="container">
+        <nav class="p">
+            <ul>
+                <li class="list"><a href="#"><i class="fa fa-bars icon-danhmuc"></i><span>Danh mục sản phẩm</span></a></li>
+                <li id="news">Tin công nghệ</li>
+                <li id="product">Sản phẩm</li>
+                <li id="intro"><a href="http://127.0.0.1:5500/baitaplon/gioithieu.html">Giới thiệu</a></li>
+                <li id="hotline"><a href="http://127.0.0.1:5500/baitaplon/lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="icon-bar">
+            <ul>
+                <li onclick="toggleInterface2()"><i class='fa fa-mobile-phone icon2'></i><span>Điện thoại</span></li>
+                <li onclick="toggleInterface3()"><i class="fa fa-laptop icon2"></i><span>Laptop</span></li> 
+                <li><a href="#"><i class="fa fa-tv icon2"></i><span>TV</span></a> </li>    
+                <li onclick="toggleInterface4()"><i class="fa fa-headphones icon2"></i><span>Tai nghe</span></li>    
+                <li><a href="#"><i class="fa fa-camera icon2"></i><span>Camera</span></a></li>    
+            </ul>
+            <div class="quangcao">
+                <img src="/baitaplon/ảnh/slide-3-960x475.jpg" alt="">
+            </div>
+            <div class="khuyenmai">
+                <img src="/baitaplon/ảnh/m14-right-homepage-th9.webp">
+                <img src="/baitaplon/ảnh/asus vivobook oled.webp">
+            </div>
+        </div>
+       
+        <div class="product">
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-item-dienthoai" id="product-item-dienthoai">
+                        <ul class="dienthoai">
+                            <li>
+                                <img src="/baitaplon/camon20-0-1.webp" alt="Product 1">
+                                <h3>TECNO CAMON 20 (8GB/256GB) - Chính hãng</h3>
+                                <p>Price:  4,190,000 ₫ <del>4,990,000 ₫</del><br>    
+                                </p>
+                                <a href="#">Mua ngay</a>
+                                <a href="#"><i class='fa fa-cart-plus fa-lg' style='color:#0f0f10'></i></i>Thêm vào giỏ hàng</a>
+                            </li>
+                            <li>
+                                <img src="/baitaplon/S20 FE (1).webp" alt="Product 2">
+                                <h3>Samsung Galaxy S20 FE 256GB - Chính hãng</h3>
+                                <p>Price: 6,990,000 ₫ <del>15,490,000 ₫</del><br>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="/baitaplon/note12pro.webp" alt="Product 3">
+                                <h3>Redmi Note 12 Pro (8GB/256GB) - Chính hãng</h3>
+                                <p>Price: 7,190,000 ₫ <del>7,990,000 ₫</del><br>
+                                    <i>Giá lên đời từ: 6,890,000 ₫<br></i>
+                                </p>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="product-item-laptop" id="product-item-laptop">
+                        <ul class="laptop">
+                            <li>
+                                <img src="/baitaplon/image-removebg-preview-12.webp" alt="Product 1">
+                                <h3>Laptop Gaming Acer Nitro 5<br> AN515-57-5669 - Chính hãng
+                                   </h3>
+                                <p>Price: 17,490,000 ₫  <del> 22,990,000 ₫</del><br>
+                                    Giá HSSV: 16,640,200 ₫</p>
+                            </li>
+                            <li>
+                                <img src="/baitaplon/21dj00cwvn-0.webp" alt="Product 2">
+                                <h3>Laptop Lenovo ThinkBook 15 Gen 4 <br>- 21DJ00CWVN - Chính hãng
+                                    </h3>
+                                <p>Price:18,990,000 ₫ <del>23,990,000 ₫</del><br>
+                                    Giá HSSV: 18,610,200 ₫</p>
+                            </li>
+                            <li>
+                                <img src="/baitaplon/03-fx506p-l.webp" alt="Product 3">
+                                <h3>Laptop ASUS TUF Gaming F15 <br>FX506HF-HN014W - Chính hãng
+                                    </h3>
+                                <p>Price:17,290,000 ₫ <del>20,990,000 ₫</del><br>
+                                    Giá HSSV: 16,444,200 ₫</p>
+                            </li>
+    
+                        </ul>
+                    
+                    </div>
+                    <div class="product-item-headphones" id="product-item-headphones">
+                        <ul class="headphones">
+                            <li>
+                                <img src="/baitaplon/image-removebg-preview-5.webp" alt="Product 3">
+                                <h3>Loa Bluetooth LG XBoom Go PL2 - chính hãng</h3>
+                                <p>Price:550,000 ₫<del>1,290,000 ₫ </del><br> Giá đã bao gồm VAT</p>
+                            </li>
+                            <li>
+                                <img src="/baitaplon/image-removebg-preview (72).webp" alt="Product 3">
+                                <h3>JBL TUNE 120TWS - Chính Hãng BlackJBL TUNE 120TWS </h3>
+                                <p>Price: 2,990,000 ₫<del>2,390,000 ₫ </del><br> Giá đã bao gồm VAT</p>
+                            </li>
+                            <li>
+                                <img src="/baitaplon/image-removebg-preview-2020-10-31t111555-385.webp" alt="product">
+                                <h3>BackBeat GO 810 - Chính hãng</h3>
+                                <p>price: 2,590,000 ₫ </p>
+                            </li>
+                        </ul>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+            </div>
+        </div>
+
+
+        <div class="sale">
+        <div class="dealtrongngay">
+            <p>Deal trong ngày</p>
+            <div class="dealtrongngay-img">
+                <div class=" dealtrongngay1">
+                    <div class="deal-box1">
+                    <img class="dealtrongngay1-1" src="/baitaplon/ảnh/a1405va-km095w-1.webp">
+                    <p>Laptop ASUS Vivobook 14 OLED A1405VA-KM095W - Chính hãng
+                        18,190,000 ₫ 20,990,000 ₫
+                        Giá HSSV: 17,326,200 ₫
+                    </p>
+                </div>
+                    <div class="deal-box2">
+                    <img class="dealtrongngay1-2" src="/baitaplon/ảnh/km085w-1.webp">
+                    <p>Laptop ASUS Zenbook 14 OLED UX3402VA-KM085W - Chính hãng
+                        23,490,000 ₫ 27,990,000 ₫
+                        Giá HSSV: 23,020,200 ₫
+                    </p>
+                </div>
+                </div>
+                <div class=" dealtrongngay2">
+                    <div class="dealtrongngay2 dealtrongngay2-1">
+                        <img src="/baitaplon/ảnh/id3-banner1.jpg">
+                        <img src="/baitaplon/ảnh/id3-banner2.jpg">
+                    </div>
+                    <div class="dealtrongngay-2 dealtrongngay2-2">
+                        <img src="/baitaplon/ảnh/id3-banner3.jpg">
+                    </div>
+                    <div class="dealtrongngay-2 dealtrongngay2-3">
+                        <img src="/baitaplon/ảnh/id3-banner4.jpg">
+                        <img src="/baitaplon/ảnh/id3-banner5.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sanphamnoibat">
+            <p>Sản Phẩm Nổi Bật</p>
+            <div class="sanphamtrongngay-img">
+                <div class="product">
+                    <img src="/baitaplon/ảnh/10-300x300.jpg">
+                    <img src="/baitaplon/ảnh/14-300x300.jpg">
+                    <img src="/baitaplon/ảnh/group_275_3.webp">
+                    <img src="/baitaplon/ảnh/group_170_1_1.webp">
+                    <img src="/baitaplon/ảnh/ipad-pro-13-select-wifi-spacegray-202210-02.webp">
+                </div>
+                <div class="banner">
+                    <img src="/baitaplon/ảnh/id3-banner6.jpg">
+                    <img src="/baitaplon/ảnh/id3-banner7.jpg">
+                </div>
+            </div>
+        </div>
+            <div class="ff">
+                <p>Ưu đãi thanh toán</p>
+                <div class="uudaithanhtoan">
+                    <img src="/baitaplon/ảnh/uob-bank-iphone5-sli.webp">
+                    <img src="/baitaplon/ảnh/vibiphone5-sli.webp">
+                    <img src="/baitaplon/ảnh/vpbnak-bank-iphone5-sli.webp">
+                    <img src="/baitaplon/ảnh/hsbcbank-iphone5-sli.webp">
+                </div>
+            </div>
+            <div class="thuonghieu">
+                <p>Các thương hiệu nổi tiếng</p>
+                <div class="thuonghieu-img">
+                    <img src="/baitaplon/ảnh/7650202e956e24e2b92449ca3e888e51.jpg">
+                    <img src="/baitaplon/ảnh/b1.jpg">
+                    <img src="/baitaplon/ảnh/b2.jpg">
+                    <img src="/baitaplon/ảnh/b3.jpg">
+                    <img src="/baitaplon/ảnh/b5.jpg">
+                    <img src="/baitaplon/ảnh/b6.jpg">
+                    <img src="/baitaplon/ảnh/b7.jpg">
+                </div>
+            </div>
+        
+    </div>
+    <div class="footer">
+        <div class="thu">
+            <p> VINATECH<br>Vinatech rất hân hạnh được phục vụ quý khách.<br> Chúng tôi sẽ cố gắng hơn nữa để cảm ơn sự tin<br> tưởng quý khách đã dành cho Vinatech.</p>
+        </div>
+        <div class="hotline">
+            <p>Thông tin liên hệ</p>
+            <a href="#" ><i class="fa fa-home">25 Đường Hàm Nghi, Mỹ Đình, Hà Nội</i></a>
+            <a href="#"><i class="fa fa-envelope"> vinatechStore@gmail.com</i></a>
+            
+        </div>
+        <div class="transport">;
+            <p>Hình thức vận chuyển</p>
+            <span><i class="fa fa-car"></i>Giao hàng tận nhà miễn phí</span>
+            <span><i class="fa fa-truck"></i>Tất cả sản phẩm có trung chuyển</span>
+            <span><i class="fa fa-plane"></i>Miễn phí ship cho đơn hàng </span>
+
+        </div>
+    </div>
+    <script src="./scipt.js">
+        // Kiểm tra điều kiện hợp lệ
+        if (!email) {
+                alert("Vui lòng nhập đầy đủ thông tin.");
+                return;
+            }
+            else{
+                alert(" Đăng ký thành công.");
+                return;
+            }
+            
+    </script>
+</body>
+</html>

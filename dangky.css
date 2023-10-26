@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(245, 245, 245, 1);
+}
+.dangnhap{
+    display: flex;
+    width: 600px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: rgba(255, 250, 243, 1);
+}
+.div1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-color{
+    color: rgba(187, 143, 91, 1);
+}
+.div2{
+    flex: 1.5;
+    margin:20px 20px 20px 0;
+    display: flex;
+    align-items: center;
+}
+.div-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .div2-1{
+    margin-top: 100px;
+} */
+.div2-2{
+    display: flex;
+    height:30px;
+    width:100%;
+    color: #7e7e7e;
+}
+.div2-2-1{
+    padding: 4px;
+    border: 0;
+    outline: 0;
+    flex: 3;
+    background-color: rgba(219, 218, 218, 1);
+}
+.div2-2-2{
+    border: 0;
+    outline: 0;
+    flex: 1;
+    background-color: rgba(224, 134, 68, 0.76);
+    color: white;
+}
+.div2-2-2:hover{
+    cursor: pointer;
+}
+.div2-2-2:active{
+    background-color: rgba(159, 85, 10, 0.76);
+}
+
+.img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    align-self: center;
+}
+.div2-3{
+    margin: 20px;
+    border: 0;
+    outline: 0;  
+    flex: 1;
+}
+.div2-4{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #333 ;
+    padding: 15px;
+}
+.icon{
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+    margin:0 25px ;
+}
